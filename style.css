@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+:root {
+  --font-principal: "Darker Grotesque", sans-serif;
+  --font-secundaria: "Sansation", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: black;
+  padding: 10px;
+  height: 100vh;
+  font-family: var(--font-principal);
+}
+
+main {
+  position: relative;
+  left: 300px;
+  width: calc(100% - 300px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  background-image: url(assets/wallpaper9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  width: 600px;
+  text-align: center;
+}
+
+main > a {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.281);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+main > a:hover {
+  background-color: rgba(0, 0, 0, 0.678);
+  transition: ease 0.3s;
+  color: rgb(226, 226, 226);
+}
+
+.barra-lateral {
+  position: fixed;
+  width: 300px;
+  padding: 0 17px;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.barra-lateral > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+}
+
+.barra-lateral > nav > ul > li {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.barra-lateral > nav > ul > li > a:hover {
+  transition: ease 0.3s;
+  color: rgb(172, 172, 172);
+}
+
+.social ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.fotos {
+    background-image: none;
+}
+
+section {
+    height: 100vh;
+}
