@@ -100,7 +100,12 @@ main > a:hover {
 }
 
 .fotos {
-    background-image: none;
+    background-image: none;  
+    display: grid;
+}
+
+.fotos > img {
+  max-width: 100%;
 }
 
 section {
