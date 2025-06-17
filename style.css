@@ -100,14 +100,31 @@ main > a:hover {
 }
 
 .fotos {
-    background-image: none;  
-    display: grid;
+  justify-content: start;
+  background-image: none;
 }
 
-.fotos > img {
-  max-width: 100%;
+.fotos > button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 20px;
+  color: white;
+  font-family: var(--font-secundaria);
+  font-weight: 400;
+  cursor: pointer;
 }
 
-section {
-    height: 100vh;
+.container {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.container > img {
+  height: 295px;
+  /* width: 400px; */
+  flex-basis: 40%;
 }
